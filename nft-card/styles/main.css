@@ -28,6 +28,12 @@ h3{
     color: var(--white);
     font-weight: 600;
     font-size: 25px;
+    transition: all .2s;
+}
+
+h3:hover{
+    color: var(--cyan-400);
+    cursor: pointer;
 }
 
 p{
@@ -49,9 +55,33 @@ p{
     gap: 1.5rem;
 }
 
-.img-equilibrium{
-    width: 100%;
+.img-main{
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
+}
+
+.img-equilibrium{
+    /* position: absolute;
+    z-index: 1; */
+    width: 100%;
+    display: block;
+}
+
+.img-hover{
+    position: absolute;
+    inset: 0;
+    background-color: var(--cyan-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.img-main:hover .img-hover{
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .price-days{
@@ -106,4 +136,10 @@ p{
 .author-name{
     color: var(--white);
     font-weight: 600;
+    transition: all .2s;
+}
+
+.author-name:hover{
+    color: var(--cyan-400);
+    cursor: pointer;
 }
