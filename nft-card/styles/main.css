@@ -141,3 +141,16 @@ p{
     color: var(--cyan-400);
     cursor: pointer;
 }
+
+@media (max-width: 380px){
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .container{
+        width: 300px;
+        gap: 17px;
+    }
+}
