@@ -59,6 +59,17 @@ p{
     gap: 10px;
 }
 
+.price img{
+    width: 16px;
+    height: 20px;
+}
+
+.price p{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cyan-400);
+}
+
 .days{
     display: flex;
     align-items: center;
