@@ -54,6 +54,12 @@ p{
     border-radius: 10px;
 }
 
+.price-days{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .price{
     display: flex;
     align-items: center;
@@ -95,4 +101,9 @@ p{
     width: 40px;
     border-radius: 50%;
     border: 1px solid var(--white);
+}
+
+.author-name{
+    color: var(--white);
+    font-weight: 600;
 }
