@@ -45,5 +45,31 @@ p{
     padding: 25px;
     border-radius: 10px;
     overflow: hidden;
-    gap: 1.5rem;
+    gap: 2rem;
+}
+
+.img-equilibrium{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.days{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    border-top: 2px solid var(--blue-800);
+    padding: 20px 0px 0px 0px;
 }
