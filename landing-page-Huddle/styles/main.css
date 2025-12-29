@@ -26,13 +26,13 @@ body{
     background-color: var(--purple-700);
     position: relative;
     overflow: hidden;
-    padding: 0px 50px;
+    padding: 50px;
 }
 
 .bg-pc{
     position: absolute;
     inset: 0;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     z-index: 1;
 }
 
@@ -44,10 +44,46 @@ body{
     display: flex;
     flex-direction: column;
     z-index: 2;
-    margin: 50px;
+    gap: 2rem;
 }
 
-.logo-brand img{    
-    margin-top: 100px;
+.main-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 4rem;
 }
 
+.media-img img{
+    width: 700px;
+}
+
+.brand-info h3{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    color: rgb(249, 245, 245);
+    font-size: 50px;
+}
+
+.brand-info p{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    color: rgb(249, 245, 245);
+    font-size: 21px;
+    line-height: 30px;   
+    margin: 30px 0px 25px 0px;
+}
+
+.brand-info button{
+    font-family: var(--font-open-sans);
+    font-size: 17px;
+    color: var(--purple-700);
+    background-color: white;
+    padding: 13px 65px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.18);
+}
