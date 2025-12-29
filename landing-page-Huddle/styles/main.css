@@ -14,27 +14,37 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: hsl(257, 38%, 16%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container{
-    width: 1450px;
+    /* width: 1450px;
     display: flex;
     flex-direction: column;
     background-color: var(--purple-700);
     position: relative;
     overflow: hidden;
+    padding: 50px; */
+
+    position: relative;
+    width: 1200px;
+    background-color: #6a4bbd; /* violeta base */
+    background-image: url("../assets/bg-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
     padding: 50px;
 }
 
-.bg-pc{
+/* .bg-pc{
     position: absolute;
     inset: 0;
-    /* padding: 0px 50px; */
     z-index: 1;
-}
+    background-size: cover;
+} */
 
 .bg-mobile{
     display: none;
@@ -43,8 +53,8 @@ body{
 .container-content{
     display: flex;
     flex-direction: column;
-    z-index: 2;
-    gap: 2rem;
+    /* z-index: 2; */
+    gap: 1rem;
 }
 
 .main-info{
@@ -52,25 +62,30 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
+}
+
+.logo-brand img{
+    width: 200px;
+    margin-bottom: 3rem;
 }
 
 .media-img img{
-    width: 700px;
+    width: 600px;
 }
 
 .brand-info h3{
     font-family: var(--font-poppins);
     font-weight: 600;
     color: rgb(249, 245, 245);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .brand-info p{
     font-family: var(--font-open-sans);
     font-weight: 400;
     color: rgb(249, 245, 245);
-    font-size: 21px;
+    font-size: 16px;
     line-height: 30px;   
     margin: 30px 0px 25px 0px;
 }
@@ -86,4 +101,34 @@ body{
     box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.18);
     -webkit-box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.18);
     -moz-box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.18);
+    transition: all .2s;
+}
+
+.brand-info button:hover{
+    background-color: var(--magenta-400);
+    color: white;
+    cursor: pointer;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.social-media svg{
+    width: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    fill: white;
+    transition: all .1s;
+}
+
+.social-media svg:hover{
+    fill: var(--magenta-400);
+    cursor: pointer;
+    border: 1px solid var(--magenta-400);
 }
