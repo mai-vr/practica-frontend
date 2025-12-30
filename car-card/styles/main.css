@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --sedan-color: hsl(31, 77%, 52%);
+    --suv-color: hsl(184, 100%, 22%);
+    --luxury-color: hsl(179, 100%, 13%);
+    --white-100: hsla(0, 0%, 100%, 0.75);
+    --gray-100: hsl(0, 0%, 95%);
+    --font-lexend: "lexend deca", sans-serif;
+    --font-big-shoulder: "big shoulders", sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-100);
+}
+
+h2{
+    font-family: var(--font-big-shoulder);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--gray-100);
+    font-size: 37px;
+}
+
+p{
+    font-family: var(--font-lexend);
+    color: var(--white-100);
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+button{
+    font-family: var(--font-lexend);
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: var(--gray-100);
+    padding: 12px 30px 12px 30px;
+    border: 2px solid transparent;
+    margin-top: 3.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .2s;
+}
