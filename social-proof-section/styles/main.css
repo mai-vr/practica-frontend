@@ -111,6 +111,7 @@ body{
     background-color: var(--magenta-900);
     color: var(--white);
     border-radius: 7px;
+    box-shadow: 10px 10px 64px -20px rgba(0,0,0,0.31);
 }
 
 .review-profile{
@@ -148,4 +149,12 @@ body{
     color: var(--pink-100);
     text-transform: capitalize;
     font-size: 15px;
+}
+
+#second-review-box{
+    transform: translateY(20px);
+}
+
+#third-review-box{
+    transform: translateY(40px);
 }
