@@ -109,3 +109,16 @@ button{
     color: var(--gray-100);
     border-color: var(--gray-100);
 }
+
+@media (max-width: 880px){
+    body{
+        padding:20px;
+    }
+    button{
+        margin-top: 0px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
