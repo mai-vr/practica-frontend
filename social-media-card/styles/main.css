@@ -103,3 +103,9 @@ main p{
     color: var(--grey-700);
     cursor: pointer;
 }
+
+@media (max-width: 375px){
+    .container{
+        width: 300px;
+    }
+}
