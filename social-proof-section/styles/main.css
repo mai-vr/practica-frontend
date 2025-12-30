@@ -158,3 +158,54 @@ body{
 #third-review-box{
     transform: translateY(40px);
 }
+
+@media(max-width: 880px) {
+    body{
+        padding: 50px 20px;
+    }
+    .container{
+        gap: 3rem;
+    }
+    .heading{
+        align-items: center;
+        gap: 2rem;
+        padding-right: 0px;
+        width: auto;
+    }
+    .heading h2{
+        font-size: 38px;
+        line-height: 30px;
+        margin: 40px 45px 0px 45px;
+    }
+    .heading p{
+        font-size: 19px;
+    }
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .stars-section{
+        width: 100%;
+    }
+    .stars-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+    }
+    #second-stars-box{
+        transform: none;
+    }
+    #third-stars-box{
+        transform: none;
+        padding-right: 40px;
+    }
+    .review-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
