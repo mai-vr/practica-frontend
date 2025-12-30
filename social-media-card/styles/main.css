@@ -22,3 +22,41 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.container{
+    background-color: var(--grey-800);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-family: var(--primary-font);
+    border-radius: 17px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    border-radius: 50%;
+    width: 75px;
+    margin: 15px 0px;
+}
+
+header h2{
+    color: var(--white-100);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+header h4{
+    color: var(--green-100);
+    font-size: 14px;
+    font-weight: 700;
+}
