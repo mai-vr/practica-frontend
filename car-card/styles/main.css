@@ -67,3 +67,45 @@ button{
     align-items: start;
     gap: 2rem;
 }
+
+#sedan-card{
+    background-color: var(--sedan-color);
+}
+
+#btn-sedan{
+    color: var(--sedan-color);
+}
+
+#suv-card{
+    background-color: var(--suv-color);
+}
+
+#btn-suv{
+    color: var(--suv-color);
+}
+
+#luxury-card{
+    background-color: var(--luxury-color);
+}
+
+#btn-luxury{
+    color: var(--luxury-color);
+}
+
+#btn-sedan:hover{
+    background-color: var(--sedan-color);
+    color: var(--gray-100);
+    border-color: var(--gray-100);
+}
+
+#btn-suv:hover{
+    background-color: var(--suv-color);
+    color: var(--gray-100);
+    border-color: var(--gray-100);
+}
+
+#btn-luxury:hover{
+    background-color: var(--luxury-color);
+    color: var(--gray-100);
+    border-color: var(--gray-100);
+}
