@@ -21,33 +21,14 @@ body{
 }
 
 .container{
-    /* width: 1450px;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--purple-700);
-    position: relative;
-    overflow: hidden;
-    padding: 50px; */
-
     position: relative;
     width: 1200px;
-    background-color: #6a4bbd; /* violeta base */
+    background-color: var(--purple-700);
     background-image: url("../assets/bg-desktop.svg");
     background-position: center;
     background-size: cover;
     overflow: hidden;
     padding: 50px;
-}
-
-/* .bg-pc{
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background-size: cover;
-} */
-
-.bg-mobile{
-    display: none;
 }
 
 .container-content{
@@ -79,6 +60,7 @@ body{
     font-weight: 600;
     color: rgb(249, 245, 245);
     font-size: 40px;
+    text-transform: capitalize;
 }
 
 .brand-info p{
@@ -131,4 +113,57 @@ body{
     fill: var(--magenta-400);
     cursor: pointer;
     border: 1px solid var(--magenta-400);
+}
+
+@media (max-width: 880px){
+    body{
+        height: auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url("../assets/bg-mobile.svg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .container-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .main-info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .logo-brand{
+        display: flex;
+        align-self: flex-start;
+    }
+    .logo-brand img{
+        margin-bottom: 2rem;
+        width: 130px;
+    }
+    .media-img img{
+        width: 300px;
+    }
+    .brand-info h3{
+        font-size: 25px;
+    }
+    .brand-info p{
+        font-size: 16px;
+    }
+    .brand-info button{
+        margin-bottom: 3rem;
+        padding: 10px 65px;
+        font-size: 16px;
+    }
+    .social-media svg{
+        width: 40px;
+    }
 }
