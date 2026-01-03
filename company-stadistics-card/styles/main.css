@@ -61,7 +61,7 @@ body{
     margin-bottom: 4rem;
 }
 
-.first section .violet-text{
+h2 .violet-text{
     color: var(--violet-500);
 }
 
