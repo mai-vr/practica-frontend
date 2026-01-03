@@ -46,3 +46,21 @@ body{
     padding: 50px 70px 50px 50px;
     color: var(--white-100);
 }
+
+.first-section h2{
+    font-family: var(--font-lexend);
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.text-section p{
+    line-height: 1.6;
+    font-family: var(--font-inter);
+    color: var(--white-200);
+    font-size: 14px;
+    margin-bottom: 4rem;
+}
+
+.first section .violet-text{
+    color: var(--violet-500);
+}
