@@ -70,7 +70,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    /* gap: 4rem; */
 }
 
 .stadistic-item{
@@ -91,4 +90,42 @@ body{
     font-family: var(--font-inter);
     font-size: 18px;
     color: var(--white-200);
+}
+
+@media (max-width: 880px){
+    .container{
+        width: 330px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+    .container img{
+        order: 1;
+    }
+    .container-content{
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    .first-section{
+        text-align: center;
+    }
+    .first-section h2{
+        font-size: 27px;
+    }
+    .text-section{
+        text-align: center;
+    }
+    .text-section p{
+        font-size: 15px;
+        margin-bottom: 2.5rem;
+    }
+    .stadistics-section{
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .stadistic-item h3{
+        font-size: 23px;
+    }
 }
