@@ -24,3 +24,25 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.container{
+    background-color: var(--blue-950);
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.container img{
+    width: 100%;
+    order: 2;
+}
+
+.container-content{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 70px 50px 50px;
+    color: var(--white-100);
+}
